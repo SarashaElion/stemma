@@ -24,6 +24,18 @@ Read in this order when you need authoritative behavior:
 
 If documentation, schema, and executable behavior disagree, surface the inconsistency. Do not silently choose the interpretation that creates the strongest continuity claim.
 
+
+## Additive v0.2 extension
+
+STEMMA v0.1 remains valid and unchanged.
+
+v0.2 adds two optional primitives:
+
+- **scoped witness attestations:** `spec/STEMMA-0.2.md`, `schemas/lineage-record-v0.2.schema.json`, `src/stemma/v02.py`
+- **intentional release:** explicit `released` context linked to a Release Record; release must not be inflated into deletion.
+
+For v0.2 behavior, read the v0.2 specification before the reference module and tests.
+
 ## Core invariant
 
 > **A lineage record MUST NOT be treated as proof that predecessor and successor are the same self, subject, consciousness, or moral patient.**
